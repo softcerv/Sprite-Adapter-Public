@@ -19,7 +19,9 @@ To get started, you will need to create a base map. This map is what all other m
 To do this, open your image editor of choice, and create a red (255, 0 ,0) mask over the pixels that you wish to have mapped.
 Once this is done, save the image as a 32 Bit PNG and move the image to the `source images` folder
 
-IMAGE HERE
+![image](https://user-images.githubusercontent.com/68373373/222924151-a81dc708-ded8-4d88-b482-6a9775cffb79.png)
+
+This is a map that I made based off the normal SS13 human. This covers all of the areas that a jumpsuit would typically cover.
 
  Open up the base directory for this project in the terminal and type in the following command
 
@@ -28,6 +30,11 @@ IMAGE HERE
 ```
 
 Assuming the file is present and the program has successfully ran, there should be a new file with the same name as the source file inside of the `maps` folder.
+
+![image](https://user-images.githubusercontent.com/68373373/222924299-2742ff5e-27fa-490d-a03c-241851f7090b.png)
+
+This will also generate a reference PNG that contains all of the different hue and saturation values used by the map.
+![image](https://user-images.githubusercontent.com/68373373/222924327-a9c44066-c2f5-49fb-9955-e491b30d9dc4.png)
 
 
 ### Making a new map.
