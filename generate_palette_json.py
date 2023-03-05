@@ -32,6 +32,8 @@ def generate_pallete(map_file, source_file, export_json):
 
             color_dict[str(map_pixel)] = str(source_pixel)
 
+        color_dict["(0, 0, 0, 0)"] = "(0, 0, 0, 0)"
+
     with open(f"{export_json}.json", "w") as outfile:
         json.dump(color_dict, outfile)
 

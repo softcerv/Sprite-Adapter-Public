@@ -28,6 +28,9 @@ def map_palette(map_to_use, palette_to_use, export_path):
 
             color_string = (palette[str(pixel)])
             rgb = color_string.strip('][)(').split(', ')
+            if(rgb[3] == 0):
+                continue
+
             rgb = tuple(map(int, rgb))
             export_map.putpixel((x,y),(rgb))
 
@@ -35,9 +38,9 @@ def map_palette(map_to_use, palette_to_use, export_path):
     if not os.path.exists(export_directory):
         os.makedirs(export_directory)
 
-    export_map.save(f"{export_directory}/{export_path}")
+    export_map.save(f"{export_directory}/{export_path}", 'PNG')
 
-#map_palette("maps/thicc_boobs.png", "palettes/janitor", "janitor")
+#map_palette("breast_.png", "palettes/janitor", "janitor")
 args = parser.parse_args()
 
 if os.path.exists(fr"{maps_folder}/{args.src_map}") == False:
